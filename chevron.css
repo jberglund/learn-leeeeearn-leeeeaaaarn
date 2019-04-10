@@ -1,0 +1,15 @@
+/* 
+  A nice way to make chevrons with CSS. Good for tabs, maybe.
+*/
+
+.chevron{
+  --chevron-size: 0.5rem;
+  clip-path: polygon(
+    calc(100% - var(--right-chevron-size, var(--chevron-size))) 0,
+    100% 50%,
+    calc(100% - var(--right-chevron-size, var(--chevron-size))) 100%,
+    0% 100%,
+    calc(0% + var(--left-chevron-size, var(--chevron-size))) 50%,
+    0% 0%
+  );
+}
